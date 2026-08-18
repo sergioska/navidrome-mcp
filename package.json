@@ -1,0 +1,33 @@
+{
+  "name": "navidrome-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that exposes Navidrome's Subsonic-compatible API to LLMs. Use it to build playlists from your listening history, extend existing playlists with similar tracks, and manage your music library with natural language.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "navidrome-mcp": "./dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "smoke": "node dist/index.js --smoke"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

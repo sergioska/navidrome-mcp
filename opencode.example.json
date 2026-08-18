@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "navidrome": {
+      "type": "local",
+      "command": ["node", "/absolute/path/to/navidrome-mcp/dist/index.js"],
+      "enabled": true,
+      "environment": {
+        "SUBSONIC_URL": "http://localhost:4533",
+        "SUBSONIC_USER": "your-user",
+        "SUBSONIC_PASSWORD": "your-password"
+      }
+    }
+  }
+}
