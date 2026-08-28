@@ -1,5 +1,7 @@
 # navidrome-mcp
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/N8M125D6O0)
+
 An [MCP](https://modelcontextprotocol.io) server that exposes your [Navidrome](https://www.navidrome.org) music library to LLM assistants, so you can manage your music with natural language:
 
 > "Visti i miei ultimi ascolti e le mie preferenze musicali, fammi una playlist di 10 brani."
